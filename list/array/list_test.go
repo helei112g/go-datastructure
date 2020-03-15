@@ -1,4 +1,4 @@
-package list_array
+package array
 
 import (
 	"testing"
