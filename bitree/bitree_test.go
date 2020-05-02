@@ -5,39 +5,7 @@ import (
 )
 
 func getTree() *TNode {
-	node2 := &TNode{
-		data:   2,
-		lChild: nil,
-		rChild: nil,
-	}
-	node4 := &TNode{
-		data:   4,
-		lChild: nil,
-		rChild: nil,
-	}
-	node5 := &TNode{
-		data:   5,
-		lChild: nil,
-		rChild: nil,
-	}
-
-	node3 := &TNode{
-		data:   3,
-		lChild: node4,
-		rChild: node5,
-	}
-	node1 := &TNode{
-		data:   1,
-		lChild: node2,
-		rChild: nil,
-	}
-	root := &TNode{
-		data:   99,
-		lChild: node1,
-		rChild: node3,
-	}
-
-	return root
+	return NewBiTree(62, 88, 58, 47, 35, 73, 51, 99, 37, 93)
 }
 
 func TestTNode_PreOrderTraverse(t1 *testing.T) {
